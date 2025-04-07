@@ -38,8 +38,7 @@ First setup your machine or your teammate's machine to be the self hosted runner
 
 - Create a deploy branch if it doesn't already exist
 - Submit a pull request to the deploy branch from main
-- Observe the actions branch in your repository1
-
+- Observe the actions branch in your repository
 
 Create a new workflow yml file that captures the following continuous integration requirement:
 
