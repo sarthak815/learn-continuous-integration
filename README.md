@@ -26,7 +26,7 @@ By following the above steps, you will have configured your machine to be self-h
 
 Imagine a team of developers working on this project. Anytime they make a change, they need to ensure that the existing functionality did not break. Hence, they design an automatic workflow that does the following:
 
-Everytime code is pushed to the main branch, all jest tests run  and a report of the run is published for all team members to view. If the tests fail then the repository is in a bad state and needs to be fixed immediately before proceeding.
+Everytime code is pushed to the main branch, all jest tests run  and a report of the run is published for all team members to view. If the tests fail then the repository is in a baad state and needs to be fixed immediately before proceeding.
 
 The team also maintains a deploy branch. This branch needs to be kept in a valid state at all times because, code from this branch is used in production. Therefore, the above workflow also gets triggered when a pull request is made to the deploy branch.
 
