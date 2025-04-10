@@ -1,0 +1,28 @@
+name: Database Setup
+
+on:
+  push:
+    branches:
+      - deploy
+
+jobs:
+  setup-database:
+    runs-on: cs5500-self-hosted
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Reset database
+        run: npx ts-node remove_db.ts
+      
+      - name: Insert sample data
+        run: npx ts-node insert_sample_db.ts
