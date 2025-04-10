@@ -25,4 +25,4 @@ jobs:
         run: npx ts-node remove_db.ts mongodb://localhost:27017/test_db
       
       - name: Insert sample data
-        run: npx ts-node insert_sample_db.ts mongodb://localhost:27017/test_db
+        run: npx ts-node insert_sample_data.ts mongodb://localhost:27017/test_db
